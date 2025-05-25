@@ -1,0 +1,18 @@
+{
+  "name": "api",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon --ext '*' --watch src --exec 'ts-node src/main.ts' --delay 1",
+    "build": "tsc",
+    "start": "NODE_ENV=production node dist",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.2",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2"
+  }
+}
