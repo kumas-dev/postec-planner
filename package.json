@@ -1,6 +1,10 @@
 {
   "name": "postec-planner",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
