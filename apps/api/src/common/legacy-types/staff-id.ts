@@ -17,8 +17,8 @@ export type StaffId = {
   USE_BUYCODE: string
 }
 
-export function migrateEmployee(employee: StaffId): EmployeeEntity {
-  const { ID, PW, ACCESS, DEPOT } = employee
+export function migrateEmployee(data: StaffId): EmployeeEntity {
+  const { ID, PW, ACCESS, DEPOT } = data
 
   return {
     id: `${ID}`,

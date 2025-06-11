@@ -1,0 +1,5 @@
+export * from './partner.model'
+export * from './partner.repository'
+export * from './partner.controller'
+export * from './partner.service'
+export * from './partner.parse'

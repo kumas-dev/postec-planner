@@ -2,7 +2,7 @@
   "name": "api",
   "private": true,
   "scripts": {
-    "dev": "nodemon",
+    "dev": "tsup src/main.ts --watch --onSuccess \"node dist/main.js\"",
     "build": "tsup",
     "start": "NODE_ENV=production node dist",
     "check-types": "tsup --noEmit"
@@ -10,18 +10,22 @@
   "dependencies": {
     "@sentry/node": "^9.22.0",
     "express": "^5.1.0",
+    "firebase-admin": "^13.4.0",
+    "jsonwebtoken": "^9.0.2",
     "kysely": "^0.28.2",
+    "luxon": "^3.6.1",
+    "mongodb": "^6.16.0",
     "morgan": "^1.10.0",
     "tarn": "^3.0.2",
-    "tedious": "^18.6.1"
+    "tedious": "^18.6.1",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@repo/shared-type": "workspace:*",
     "@types/express": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/luxon": "^3.6.2",
     "@types/morgan": "^1.9.9",
-    "nodemon": "^3.1.10",
-    "ts-node": "^10.9.2",
-    "tsconfig-paths": "^4.2.0",
     "tsup": "^8.5.0"
   }
 }

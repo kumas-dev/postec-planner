@@ -1,0 +1,5 @@
+export * from './inventory.model'
+export * from './inventory.repository'
+export * from './inventory.service'
+export * from './inventory.controller'
+export * from './inventory.parse'

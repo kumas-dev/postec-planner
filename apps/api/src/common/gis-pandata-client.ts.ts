@@ -1,12 +1,13 @@
 import { createKysely } from './kysely'
-import { StaffId } from './legacy-types'
+import { DOCF8, Setup } from './legacy-types'
 
 export type PostecData = {
-  Staff_Id: StaffId
+  DOCF8: DOCF8
+  SETUP: Setup
 }
 
 export const kysely = createKysely<PostecData>({
-  database: 'Postec_Data',
+  database: 'GIS_PANDATA',
 })
 
 export const defaultKyselyContext = { db: kysely.db }
